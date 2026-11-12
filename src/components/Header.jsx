@@ -4,10 +4,9 @@ import { Menu, X } from "lucide-react";
 import { APP_URL, nav } from "../content";
 
 /*
-  What changed: a thin bar that blurs as you scroll, not a thick letterhead rule.
-  Why: the double navy-and-orange border was reading as an older brochure site.
-  The logo and the orange button still carry the brand.
-  Related: styles.css
+  What changed: top nav matches desktop and mobile (About included once).
+  Why: client asked for simple, consistent navigation for less tech-savvy users.
+  Related: content.js nav, styles.css
 */
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -72,9 +71,6 @@ export default function Header() {
               {item.label}
             </NavLink>
           ))}
-          <Link to="/about" className="nav-link">
-            About
-          </Link>
         </nav>
       )}
     </header>

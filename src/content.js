@@ -20,13 +20,15 @@ export const company = {
   city: "Manhasset, NY 11030",
 };
 
-// Header stays short on purpose. About sits in the footer, as on the live site,
-// so the top bar does not become a crowded menu.
+// --- Navigation (client feedback: simple + intuitive for every age) ---
+// Same pages as before. "Reviews" reads clearer than "Testimonials".
+// About is in the top bar so it is not only in the footer or mobile menu.
 export const nav = [
   { to: "/features", label: "Features" },
   { to: "/pricing", label: "Pricing" },
   { to: "/portfolios", label: "Portfolios" },
-  { to: "/testimonials", label: "Testimonials" },
+  { to: "/testimonials", label: "Reviews" },
+  { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -35,7 +37,7 @@ export const footerNav = [
   { to: "/features", label: "Features" },
   { to: "/pricing", label: "Pricing" },
   { to: "/portfolios", label: "Portfolios" },
-  { to: "/testimonials", label: "Testimonials" },
+  { to: "/testimonials", label: "Reviews" },
   { to: "/contact", label: "Contact" },
 ];
 
